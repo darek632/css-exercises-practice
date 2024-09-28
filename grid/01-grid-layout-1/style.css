@@ -26,13 +26,16 @@ html {
 }
 
 .header {
-  background-color: #006157;
- grid-area: 1 / 1 / 2 / 3;
-}
+  background-color: #006157; 
+ grid-area: 1 / 1 / 2 / 3; 
+ /* could've shorthanded the shorthand even more by only adjusting the tracks which span more than 1 track, so column in this case,
+ as row will span as 1 by default. */
+} 
 
 .sidebar {
   background-color: #005B94;
   grid-area: 2 / 1 / 4 / 2;
+  /* shorthand for row only as no need to specify column as is default width. */
 }
 
 .nav {
@@ -46,6 +49,8 @@ html {
 .footer {
   background-color: #393f4d;
   grid-area: 4 / 1 / 5 / 3;
+
+/* same as header; */
 }
 
 .article p {
